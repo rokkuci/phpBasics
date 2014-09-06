@@ -2,15 +2,16 @@
 <html>
 <head>
 	<title>Learn PHP by commiting.</title>
-	<charset="utf-8" />
-</head>
+	<meta charset="utf-8" />
+	</head>
 <body>
 
 <div class="functions">
 	
 	<?php 
 
-		$files = scandir('./functions');
+		$domain = "http://localhost/phpBasic";
+		$files = scandir('functions');
 		sort($files); //sorting
 	?>
 
@@ -28,7 +29,7 @@
 		<ul>	
 		<?php
 			$itemNumber = $itemNumber + 1;
-		 	echo'<li id="listItem-'.$itemNumber.'"><a href="'.$file.'">'.$file.'</a> </li>' . '<br />';				
+		 	echo'<li id="listItem-'.$itemNumber.'"><a href="/phpBasic/functions/'.$file.'">'.$file.'</a> </li>' . '<br />';				
 					}
 				} 
 			} 
